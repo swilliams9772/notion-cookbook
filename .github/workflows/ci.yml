@@ -20,18 +20,6 @@ jobs:
         with:
           node-version: 20.x
       - name: Install dependencies for JavaScript examples
-        run: |
-          for dir in examples/javascript/*/; do
-            if [ -f "$dir/package.json" ]; then
-              echo "Installing dependencies in $dir..."
-              (cd "$dir" && npm install)
-            fi
-          done
+        run: ./scripts/install-examples.sh
       - name: Typecheck JavaScript examples
-        run: |
-          for dir in examples/javascript/*/; do
-            if [ -f "$dir/tsconfig.json" ]; then
-              echo "Typechecking $dir..."
-              (cd "$dir" && npx tsc --noEmit) || exit 1
-            fi
-          done
+        run: ./scripts/typecheck-examples.sh
