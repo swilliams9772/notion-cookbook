@@ -17,7 +17,7 @@
     "url": "https://github.com/makenotion/notion-sdk-js/issues"
   },
   "dependencies": {
-    "@notionhq/client": "^5.3.0",
+    "@notionhq/client": "^5.4.0",
     "dotenv": "^17.2.1"
   },
   "devDependencies": {

@@ -228,14 +228,13 @@ function extractPropertyItemValueToString(
       }`
     case "verification":
       return property.verification?.state ?? ""
-    // Note: "place" property type is not yet available in published SDK version
-    // case "place":
-    //   if (!property.place) {
-    //     return ""
-    //   }
-    //   return (
-    //     property.place.name ?? `${property.place.lat}, ${property.place.lon}`
-    //   )
+    case "place":
+      if (!property.place) {
+        return ""
+      }
+      return (
+        property.place.name ?? `${property.place.lat}, ${property.place.lon}`
+      )
   }
   return assertUnreachable(property)
 }
