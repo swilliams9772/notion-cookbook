@@ -22,12 +22,6 @@ AI-powered workflows for common Notion tasks:
 
 As the AI ecosystem grows, we'll add skills for other providers.
 
-### Claude Code plugin
-
-A one-click install plugin for Claude Code users:
-
-- **[Notion Workspace Plugin](claude-code-notion-plugin/)**: Bundles Notion Skills and the Notion MCP server together for easy installation in Claude Code
-
 ### Documentation
 
 The `docs/` directory is reserved for Notion's core developer documentation, which will be migrated here in the future. For now, visit [developers.notion.com](https://developers.notion.com) for API references and guides.
