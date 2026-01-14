@@ -28,6 +28,31 @@ The `docs/` directory is reserved for Notion's core developer documentation, whi
 
 ## Getting started
 
+### Quick setup
+
+If you want to run all the JavaScript examples at once:
+
+1. Clone this repository
+2. Run the setup scripts:
+   ```bash
+   bash scripts/install-examples.sh
+   bash scripts/typecheck-examples.sh
+   ```
+3. Configure your Notion API key - see **[QUICK_START.md](QUICK_START.md)** for step-by-step instructions
+4. Grant workspace access - see **[WORKSPACE_SETUP.md](WORKSPACE_SETUP.md)** for bulk access options
+
+**Setup guides:**
+
+- 📚 **[QUICK_START.md](QUICK_START.md)** - Complete setup walkthrough
+- 🏢 **[WORKSPACE_SETUP.md](WORKSPACE_SETUP.md)** - Grant integration access to all your pages
+- 📊 **[SETUP_STATUS.md](SETUP_STATUS.md)** - Configuration reference
+
+**Test your setup:**
+
+```bash
+node test-workspace-access.js
+```
+
 ### Running examples
 
 Each example includes its own README with setup instructions. In general:

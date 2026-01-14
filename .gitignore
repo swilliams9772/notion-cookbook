@@ -157,3 +157,9 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
+
+# Log files
+*.log
+organize-log.txt
+archive-log.txt
+archive-today-log.txt
